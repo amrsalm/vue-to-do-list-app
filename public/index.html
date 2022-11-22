@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>amr</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <h1>{{ message }}</h1>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+
+    <script>
+      var app = new Vue({
+        el: "#app",
+        data() {
+          return {
+            message: "hello",
+            tasks: [
+              {
+                id: 1,
+                title: "thing1"
+              },
+              {
+                id: 2,
+                title: "thing2"
+              },
+              {
+                id: 3,
+                title: "thing3"
+              }
+            ]
+          };
+        }
+      });
+    </script>
+  </body>
+</html>
